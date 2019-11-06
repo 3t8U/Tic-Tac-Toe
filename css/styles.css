@@ -37,12 +37,22 @@ cursor: url("../img/cursor.png"),auto;
 }
 .row p {
   text-align: center;
-  margin-top: 1rem;
   margin-bottom: 1rem;
 }
 
 h2 {
   text-align: center;
+  color: rgba(255, 17, 0, 1);
+  animation: blink 1s linear infinite;
+}
+@keyframes blink{
+    0% {
+      color: rgba(255, 17, 0, 1);
+    } 40% {
+      color: rgba(255, 17, 0, 0);
+    } 80% {
+      color: rgba(255, 17, 0, 1);
+    }
 }
 
 .col-sm-4:nth-of-type(2) {

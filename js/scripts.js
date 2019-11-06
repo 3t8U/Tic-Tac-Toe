@@ -55,6 +55,7 @@ $(document).ready(function(){
     freshGame = new Game();
 
   });
+
   $(".col-sm-4").click(function(){
     var spot = this.id.split("");
 
