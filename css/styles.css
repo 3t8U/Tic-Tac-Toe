@@ -1,8 +1,22 @@
+body {
+cursor: url("../img/cursor.png"),auto;
+}
+
+
+
+
+#startGame {
+  text-align: center;
+
+}
+
+
 #gameBoard {
   display: none;
   width: 80%;
-  height: 80%;
+  height: 100%;
   margin: auto auto auto auto;
+  background-color: rgba(0, 0, 0, 0.3);
 }
 
 .row:nth-of-type(2) {
@@ -11,7 +25,16 @@
   border-width: 2px;
   border-image: linear-gradient(to right, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.4) 50%, rgba(0, 0, 0, 0) 100%) 5;
 }
+.col-sm-4:nth-of-type(2) {
+  border-left: solid;
+  border-right: solid;
+  border-width: 2px;
+  border-image: linear-gradient(rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.4) 50%, rgba(0, 0, 0, 0) 100%) 5;
+}
 
+.row {
+  height: 14em;
+}
 .row p {
   text-align: center;
   margin-top: 1rem;
@@ -29,15 +52,12 @@ h2 {
   border-image: linear-gradient(rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.4) 50%, rgba(0, 0, 0, 0) 100%) 5;
 }
 
-.col-sm-4 {
-  cursor: pointer;
-}
 
 img {
   height: 50px;
   margin-left: 50%;
 }
 
-#startGame {
-  text-align: center;
+#start {
+  cursor: url("../img/cursor.png"),auto;
 }
