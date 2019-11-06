@@ -37,3 +37,7 @@ img {
   height: 50px;
   margin-left: 50%;
 }
+
+#startGame {
+  text-align: center;
+}
