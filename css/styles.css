@@ -32,3 +32,8 @@ h2 {
 .col-sm-4 {
   cursor: pointer;
 }
+
+img {
+  height: 50px;
+  margin-left: 50%;
+}
