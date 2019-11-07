@@ -3,7 +3,6 @@ function Game() {
   this.board = [["", "", ""],
                 ["", "", ""],
                 ["", "", ""]];
-  this.players = "humans";
   this.currentPlayer = ((Math.random() > 0.5) ? "alien" : "human"); //randomize start player
   this.turnNumber = 0;
   this.cheatR = {human: 0, alien: 0};
@@ -41,19 +40,19 @@ Game.prototype.checkWin = function(spot) {
 
 
  //UI Logic
- var freshGame = "";
 $(document).ready(function(){
+  var freshGame = "";
   var winner = "";
 
   $("div#start").click(function(){
 
-    $("div#startGame").hide();
-    $("div#gameBoard").show();
+    $("div#startGame").fadeOut(1000); // Fade in function in lieu of click
+    $("div#gameBoard").fadeIn(1000);
     freshGame = new Game();
 
   });
 
-  $(".col-sm-4").click(function(){  // Click function to set id of current turn
+  $("div.col-sm-4").click(function(){  // Click function to set id of current turn
     var spot = this.id.split("");
 
     //checks if something is on current spot and if someone has won //
@@ -65,15 +64,19 @@ $(document).ready(function(){
     }
 
     if (winner !== winner) {  // Conpletes action on win
-      alert("Cat always wins!");
+      $("div#gameBoard").fadeOut(1000);
+      $("body").attr("class", "catBody");
+      $("div#catWin").fadeIn(1000);
     } else if (winner && (freshGame.currentPlayer === "alien")){
-      alert ("Congratulations, you've conquered the Earth and ruined Humanity");
-    } else if (winner && (freshGame.currentPlayer === "human")){
       alert("Thank you Mario but, our princess is in another Galaxy...........");
+    } else if (winner && (freshGame.currentPlayer === "human")){
+      // $("div#humanWin");
+      $("div#humanWin").fadeIn(1000);
+      $("div#gameBoard").fadeOut(1000);
     }
 
   });
-  $("#cheatR").click(function(){
+  $("span#cheatR").click(function(){
     freshGame.cheatR[freshGame.currentPlayer]++;
   });
 

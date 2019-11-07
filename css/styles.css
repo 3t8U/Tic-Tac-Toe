@@ -13,6 +13,10 @@ body {
     background-position: -500px -567px;
   }
 }
+.catBody {
+  animation: none;
+}
+
 
 .container {
   position: fixed;
@@ -35,7 +39,7 @@ body {
   font-style: italic;
 }
 #start {
-  cursor: url("../img/cursor.png"),auto;
+  cursor: url("../img/rocket.png"),auto;
 }
 
 
@@ -48,19 +52,20 @@ body {
 }
 #gameBoard h2 {
   text-align: center;
-  animation: blink 2s infinite;
+  animation: blink 1.5s infinite;
   font-variant: small-caps;
   font-size: 5em;
+  color: white;
 }
 @keyframes blink{
   0% {
-    color: rgba(255, 255, 255, 0);
+    text-shadow: 2px 2px rgba(255, 0, 0, 0), -2px -2px rgba(255, 0, 0, 0), -2px 2px rgba(255, 0, 0, 0), 2px -2px rgba(255, 0, 0, 0);
     } 35% {
-      color: rgba(255, 255, 255, 1);
+      text-shadow: 2px 2px rgba(255, 0, 0, 0.75), -2px -2px rgba(255, 0, 0, 0.75), -2px 2px rgba(255, 0, 0, 0.75), 2px -2px rgba(255, 0, 0, 0.75);
       } 65% {
-        color: rgba(255, 255, 255, 1);
+        text-shadow: 2px 2px rgba(255, 0, 0, 0.75), -2px -2px rgba(255, 0, 0, 0.75), -2px 2px rgba(255, 0, 0, 0.75), 2px -2px rgba(255, 0, 0, 0.75);
         } 100% {
-          color: rgba(255, 255, 255, 0);
+          text-shadow: 2px 2px rgba(255, 0, 0, 0), -2px -2px rgba(255, 0, 0, 0), -2px 2px rgba(255, 0, 0, 0), 2px -2px rgba(255, 0, 0, 0);
         }
 }
 
@@ -89,10 +94,35 @@ div[id="01"], div[id="11"], div[id="21"] {
 }
 
 img {
-  height: 50px;
-  margin-left: 50%;
+  height: 100px;
+  margin-left: 80px;
+  margin-top: 80px;
 }
 
 .win {
   display: none;
+  height: 100vh;
+  width: 100vw;
+  background-color: black;
+}
+.win h2{
+  margin-top: 80vh;
+  height: 20vh;
+  width: 100vw;
+  padding-top: 5%;
+  font-size: 50px;
+  background-color: black;
+}
+
+.winner{
+  text-align: center;
+  animation: blink 1.5s infinite;
+  font-variant: small-caps;
+  font-size: 5em;
+  color: white;
+  }
+
+img#cat {
+  margin-left: 5%;
+  height: 80vh;
 }
