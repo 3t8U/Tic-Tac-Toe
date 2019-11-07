@@ -3,6 +3,7 @@
   <head>
     <meta charset="utf-8">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link href="css/buttons.css" rel="stylesheet" type="text/css">
     <link href="css/styles.css" rel="stylesheet" type="text/css">
     <script src="js/jquery-3.4.1.js"></script>
     <script src="js/scripts.js"></script>
@@ -10,12 +11,19 @@
   </head>
   <body>
     <div class="container" id="startGame">
-      <h2>The fate of the Earth is in your hands .....So, good luck with all of that....</h2>
+      <h1>The fate of the Earth is in your hands!</h1>
+      <h2>...so, good luck with all of that...</h2>
       <br>
-      <button type="button" id="start">Defend Earth Now!</button>
+      <figure>
+        <div id="start">
+          <span>Defend the Earth!</span>
+          <span>Start Now!</span>
+        </div>
+      </figure>
     </div>
+
     <div class="container" id="gameBoard">
-      <h2>"Battle in Progress"</h2>
+      <h2>Invasion in Prog<span id="cheatR">r</span>ess</h2>
       <div class="row">
         <div id="00" class="col-sm-4">
           <img>
@@ -49,6 +57,18 @@
           <img>
         </div>
       </div>
+      <!-- <div class="container" id="video">
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/NTFbl51apRU?start=221" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      </div> -->
+    </div>
+    <div id="catWin" class="container win">
+ <img src="img/cat.gif" alt="Cat Always Wins ;)">
+    </div>
+    <div id="alienWin" class="container win">
+
+    </div>
+    <div id="humanWin" class="container win">
+
     </div>
   </body>
 </html>
