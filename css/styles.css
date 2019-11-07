@@ -1,11 +1,10 @@
 body {
   position: fixed;
 
-  cursor: url("../img/cursor.png"),auto;
+  cursor: url("../img/rocket.png"),auto;
   background-image: url("../img/stars.gif");
   animation: slide 30s linear infinite;
 }
-
 @keyframes slide {
   from {
     background-position: 0px 0px;
@@ -26,13 +25,17 @@ body {
   text-align: center;
   font-family: monospace;
   color: white;
+  font-variant: small-caps;
 }
 #startGame h1 {
-  font-size: 3.5em;
+  font-size: 4em;
 }
 #startGame h2 {
   font-size: 1.5em;
   font-style: italic;
+}
+#start {
+  cursor: url("../img/cursor.png"),auto;
 }
 
 
@@ -42,7 +45,6 @@ body {
   width: 50em;
   height: 50em;
   margin: auto auto auto auto;
-  /* background-color: rgba(255, 255, 255, 0.3); */
 }
 #gameBoard h2 {
   text-align: center;
@@ -60,60 +62,35 @@ body {
         } 100% {
           color: rgba(255, 255, 255, 0);
         }
-      }
+}
 
 div[id="01"], div[id="11"], div[id="21"] {
   border-left: solid;
   border-right: solid;
   border-width: 3px;
   border-color: white;
-
-}
-div[id="10"], div[id="11"], div[id="12"] {
+} div[id="10"], div[id="11"], div[id="12"] {
   border-top: solid;
   border-bottom: solid;
   border-width: 3px;
   border-color: white;
-
-}
-div[id="01"] {
+} div[id="01"] {
   border-image: linear-gradient(to bottom, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0) 10%, rgba(255, 255, 255, 1) 100%) 5;
-}
-div[id="21"] {
+} div[id="21"] {
   border-image: linear-gradient(to top, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0) 10%, rgba(255, 255, 255, 1) 100%) 5;
-}
-div[id="10"] {
+} div[id="10"] {
   border-image: linear-gradient(to right, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0) 10%, rgba(255, 255, 255, 1) 100%) 5;
-}
-div[id="12"] {
+} div[id="12"] {
   border-image: linear-gradient(to left, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0) 10%, rgba(255, 255, 255, 1) 100%) 5;
 }
 
-
 .row {
-  height: 14em;
+  height: 15em;
 }
-.row p {
-  text-align: center;
-  margin-bottom: 1rem;
-}
-
-
-/* .col-sm-4:nth-of-type(2) {
-  border-left: solid;
-  border-right: solid;
-  border-width: 2px;
-  border-image: linear-gradient(rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.4) 50%, rgba(0, 0, 0, 0) 100%) 5;
-} */
-
 
 img {
   height: 50px;
   margin-left: 50%;
-}
-
-#start {
-  cursor: url("../img/cursor.png"),auto;
 }
 
 .win {
