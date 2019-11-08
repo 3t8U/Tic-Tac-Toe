@@ -126,3 +126,7 @@ img#cat {
   margin-left: 5%;
   height: 80vh;
 }
+
+img#alien {
+image:repeat;
+}

@@ -2,7 +2,7 @@
 
 #### _This application is an interpretation of the classic game "Tic Tac Toe", 11-8-2019_
 
-#### By _**Nate Powers & Jaimie**_
+#### By _**Nate Powers & Jaime Gensler*_
 
 ## Description
 
@@ -56,7 +56,7 @@ _No known bugs_
 
 ## Support and contact details
 
-_Any questions, comments or contributions please contact Nate Powers (Russellsproutz@Gmail.com) or Jaimie ()_
+_Any questions, comments or contributions please contact Nate Powers (Russellsproutz@Gmail.com) or Jaime Gensler (jaimegensler0@gmail.com)_
 
 ## Technologies Used
 
@@ -85,4 +85,4 @@ LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
 THE SOFTWARE.*
 
-Copyright (c) 2019 **_Malcolm Womble, Nate Powers_**
+Copyright (c) 2019 **_Jaime Gensler, Nate Powers_**

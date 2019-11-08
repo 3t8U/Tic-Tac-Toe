@@ -68,7 +68,9 @@ $(document).ready(function(){
       $("body").attr("class", "catBody");
       $("div#catWin").fadeIn(1000);
     } else if (winner && (freshGame.currentPlayer === "alien")){
-      alert("Thank you Mario but, our princess is in another Galaxy...........");
+      $("div#gameBoard").fadeOut(1000);
+      $("body").attr("class", "alienBody");
+      $("div#alienWin").fadeIn(1000);
     } else if (winner && (freshGame.currentPlayer === "human")){
       // $("div#humanWin");
       $("div#humanWin").fadeIn(1000);
